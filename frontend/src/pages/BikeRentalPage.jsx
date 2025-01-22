@@ -26,6 +26,35 @@ const BIKE_DATA = [
     rentPerDay: 1000,
     image: "../assets/images/bike3.jpg",
   },
+  {
+    id: 3,
+    name: "Yamaha R15",
+    brand: "Yamaha",
+    category: "Sports",
+    rentPerDay: 1000,
+    image: "../assets/images/bike3.jpg",
+  },{
+    id: 3,
+    name: "Yamaha R15",
+    brand: "Yamaha",
+    category: "Sports",
+    rentPerDay: 1000,
+    image: "../assets/images/bike3.jpg",
+  },{
+    id: 3,
+    name: "Yamaha R15",
+    brand: "Yamaha",
+    category: "Sports",
+    rentPerDay: 1000,
+    image: "../assets/images/bike3.jpg",
+  },{
+    id: 3,
+    name: "Yamaha R15",
+    brand: "Yamaha",
+    category: "Sports",
+    rentPerDay: 1000,
+    image: "../assets/images/bike3.jpg",
+  },
 ];
 
 const BikeRentalPage = () => {
