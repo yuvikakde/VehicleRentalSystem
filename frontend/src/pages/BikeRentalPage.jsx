@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import blurImage from "../assets/images/bg.jpeg";
+import { useNavigate } from "react-router-dom";
 
 const BIKE_DATA = [
   {
@@ -8,7 +9,7 @@ const BIKE_DATA = [
     brand: "KTM",
     category: "Sports",
     rentPerDay: 1200,
-    image: "../assets/images/bike1.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtccx3lR87HbuiG--cJfpHbThsWbQhuEL_3w&s",
   },
   {
     id: 2,
@@ -16,7 +17,7 @@ const BIKE_DATA = [
     brand: "Royal Enfield",
     category: "Cruiser",
     rentPerDay: 1500,
-    image: "../assets/images/bike2.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwovVgrZp1tGhxTY1m1Pz-0FliwOmHxUqqFg&s",
   },
   {
     id: 3,
@@ -24,41 +25,45 @@ const BIKE_DATA = [
     brand: "Yamaha",
     category: "Sports",
     rentPerDay: 1000,
-    image: "../assets/images/bike3.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ztM7lDNtzxePK2UCIUbO3L_erXYIpdhqpA&s",
   },
   {
-    id: 3,
-    name: "Yamaha R15",
+    id: 4,
+    name: "Yamaha MT",
     brand: "Yamaha",
     category: "Sports",
     rentPerDay: 1000,
-    image: "../assets/images/bike3.jpg",
-  },{
-    id: 3,
-    name: "Yamaha R15",
-    brand: "Yamaha",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDhW90BsMdbnZl7FMfaQDjnS2owxZ4vqpF3g&s",
+  },
+  {
+    id: 5,
+    name: "Pulsar 250",
+    brand: "Bajaj",
     category: "Sports",
     rentPerDay: 1000,
-    image: "../assets/images/bike3.jpg",
-  },{
-    id: 3,
-    name: "Yamaha R15",
-    brand: "Yamaha",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKSgHn4fObcAmcmlnAkZ9WNH02Ct-igxBsVg&s",
+  },
+  {
+    id: 6,
+    name: "Hayabusa",
+    brand: "Suzuki",
+    category: "Rocket",
+    rentPerDay: 1000,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUJyyqUyRQU4UiO0pZbs_oGsVxrQkbv_2zZw&s",
+  },
+  {
+    id: 7,
+    name: "KTM RC",
+    brand: "KTM",
     category: "Sports",
     rentPerDay: 1000,
-    image: "../assets/images/bike3.jpg",
-  },{
-    id: 3,
-    name: "Yamaha R15",
-    brand: "Yamaha",
-    category: "Sports",
-    rentPerDay: 1000,
-    image: "../assets/images/bike3.jpg",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD275gCRDpmPQTxUuLCueBtnjFqSVpUEzH6g&s",
   },
 ];
 
 const BikeRentalPage = () => {
   const [bikes, setBikes] = useState(BIKE_DATA);
+  const navigate = useNavigate(); // ✅ Initialize useNavigate
 
   return (
     <div
@@ -93,9 +98,10 @@ const BikeRentalPage = () => {
               <p>Brand: {bike.brand}</p>
               <p>Category: {bike.category}</p>
               <p>Rent Per Day: ₹{bike.rentPerDay}</p>
+              
               <button
                 className="mt-4 px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 transition"
-                onClick={() => alert(`Booking ${bike.name}`)}
+                onClick={() => navigate("/user-booking-details")} // ✅ Working navigation
               >
                 Book Now
               </button>
