@@ -93,7 +93,7 @@ const Home = () => {
 
   const navigate = useNavigate();
 
-  const apiUrl = "http://192.168.1.8:5000/api/v1/product/get-products";
+  const apiUrl = "https://vehiclerentalsystem-6zxf.onrender.com/api/v1/product/get-products";
 
   const getProduct = async () => {
     try {

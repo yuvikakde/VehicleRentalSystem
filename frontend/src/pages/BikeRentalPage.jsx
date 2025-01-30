@@ -101,7 +101,7 @@ const BikeRentalPage = () => {
               
               <button
                 className="mt-4 px-4 py-2 bg-blue-500 text-white font-bold rounded-md hover:bg-blue-600 transition"
-                onClick={() => navigate("/user-booking-details")} // ✅ Working navigation
+                onClick={() => navigate("/user-booking-details")} 
               >
                 Book Now
               </button>

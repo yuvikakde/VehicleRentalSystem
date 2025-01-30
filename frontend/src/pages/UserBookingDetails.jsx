@@ -136,7 +136,7 @@ const UserBookingDetails = () => {
           {/* Confirm Button */}
           <div className="mt-6 text-center">
             <button
-              onClick={handleConfirmBooking}  // Added onClick handler to trigger navigation
+              onClick={handleConfirmBooking}  
               className="px-6 py-3 bg-blue-600 text-white font-bold rounded-md hover:bg-blue-700 transition"
             >
               Confirm Booking

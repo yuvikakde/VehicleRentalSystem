@@ -119,9 +119,11 @@ function PaymentForm() {
         <div className="text-center">
           <button
             type="submit"
+            onClick={handleSubmit}
+            navigate="/payment-info"
             className="px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600"
           >
-            Confirm Payment
+            Confirm Payment(RazorPay)
           </button>
         </div>
       </form>

@@ -18,6 +18,7 @@ import About from './pages/About';
 import Testimonials from './pages/Testimonal';
 import Blog from './pages/Blog';
 import BikeRentalPage from './pages/BikeRentalPage';
+import Razorpay from './pages/Razorpay';
 
 
 
@@ -45,8 +46,8 @@ const App = () => {
             />
              <Route path="/payment" element={<PaymentPage />} />
              <Route path="/bike-rentals" element={<BikeRentalPage />} />
-
-          </Route>
+             <Route path="/payment-info" element={<Razorpay />} />
+             </Route>
         </Routes>
       </BrowserRouter>
     </>
